@@ -1,4 +1,5 @@
 :root {
+    /* COLORES */
     --color-amarillo : #EAC926;
     --color-azul : #03264C;
     --color-celeste : #1259c3;
@@ -6,15 +7,20 @@
     --color-grisClaro : #ebebeb;
     --color-verde : #39b54a;
 }
+
 body{
     background-color: var(--color-grisClaro);
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto';
 }
+
+/* HEADER  */
+
 .home header{
     background-color: var(--color-amarillo) ;
     display: flex;
@@ -23,22 +29,27 @@ body{
     align-items: center;
     width: 100%;
 }
+
 .home header div.container-logo{
     display: flex;
     justify-content:space-between;
     margin-bottom: 20px;
 }
+
 .home header .container-logo img#logo{
     width: 50%;
     margin-right: 10px;
 }
+
 .home header div.container-logo div.form{
     display: flex;
     width: 50%;
 }
+
 .home header div.container-logo div.form form{
     width: 100%;
 }
+
 .home header div.container-logo div.form form input{
     background-color: white;
     background-image: url('/img/searchicon.png');
@@ -53,22 +64,29 @@ body{
     width: 100%;
     font-size: 0.79rem;
 }
+
 .home header div.container-logo div.form button{
     display: none;
 }
+
 .home header nav ul{
     list-style: none;
 }
+
 .home header nav ul a {
     text-decoration: none;
     color: black;
 }
+
 .home header nav{
     display: none;
 }
+
 .home header p{
     margin-bottom: 30px;
 }
+
+
 .home header div.burger-menu{
     background-color: var(--color-celeste);
     padding: 11px;
@@ -76,6 +94,13 @@ body{
     color: white;
     font-size: 25px;
 }
+
+/* END HEADER */
+
+
+
+/* MAIN */
+
 .home main img.banner{
     margin-bottom: 20px;
 }
@@ -92,22 +117,27 @@ body{
     max-width: 368px;
     margin: 0 auto ;
 }
+
 .home main section article div.cont{
     background-color: white;
     width: 100%;
     padding: 15px;
 }
+
 .home main section article div.cont strong{
     color: var(--color-grisOscuro);
     font-weight: 200;
 }
+
 .home main section article div.precio-producto{
     display: flex;
     margin-bottom: 20px;
 }
+
 .home main section article div.cont div.precio-producto p{
     width: 30%;
 }
+
 .home main section article div.precio-producto p:last-child{
     color: var(--color-verde);
     width: 70%;
@@ -125,75 +155,104 @@ body{
     position: absolute;
     right: 20px;
     top: 75%;
+    transition: all .3s ease;
 } 
+
+.home main section article i:hover{
+    transform: rotateZ(-90deg);
+}
+
+/* END  MAIN  */
+
+
+/*FOOTER*/
+
 .home footer{
     text-align: center;
     padding-top: 30px;
     padding-bottom: 10px;
 }
 
-.home footer article{
+.home footer .contentArticle article{
     margin-bottom: 25px;
 }
-.home footer article i{
+
+.home footer .contentArticle article i{
     color: var(--color-celeste);
     font-size: 30px;
     margin-bottom: 20px;
 }
-.home footer article p{
+
+.home footer .contentArticle article p{
     font-size: var(--paragraph);
     width: 80%;
     margin: 0 auto;
 }
-.home footer article h4{
+
+.home footer .contentArticle article h4{
     font-size: 14px;
 }
-.home footer p#copyright{
+
+.home footer  p#copyright{
     font-size: var(--paragraph);
     color: var(--color-grisOscuro);
     text-align: left;
     margin-left: 10px;
 } 
+
+
+/* MEDIA QUERIES */
+
 @media(min-width:768px){
+
+/* HEADER */
+
 .home header{
     flex-direction: row;
     flex-wrap: wrap;
     padding: 25px 20px;
     align-items: center;
     justify-content: space-between;
-}   
+}
+    
 .home header div.container-logo{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 0px;
 }
+
 .home header div.container-logo div.form form{
     width: 75%;
     margin-right: 5px;
     display: flex;
-}    
+}
+    
 .home header div.container-logo div.form form input{
     background-image: none;
     padding-left: 0px;
     padding-right: 0px;
     border-radius: 2px 0 0 2px;
     border: 1px solid black;
-} 
+}
+  
 .home header div.container-logo div.form button.busqueda{
     display: flex;
     border: 1px solid black;
     border-radius:0 2px 2px 0;
     padding: 1px;
 }
+
 .home header p{
     margin-bottom: 0px;
     margin-top: 7px;
     font-size: 0.79rem;
-}    
+}
+    
 .home header div.burger-menu{
     display: none;
-}     
+}  
+    
 .home header nav{
     display: flex;
     margin-top: 30px;
@@ -201,24 +260,34 @@ body{
     align-items: center;
     width: 100%;
 }    
+
 .home header nav ul{
     display: flex;
     justify-content:space-between;
     align-items: center;
-}    
+}
+    
 .home header nav ul li{
     margin-right: 15px;
     font-size: 0.83rem;
 }
+
 .home header nav ul li:last-child {
     margin-right: 0;
-}   
+}
+
+/* END HEADER   */
+    
+
+/* MAIN */
+
 .home main section{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
+
 .home main section h3{
     color: var(--color-grisOscuro);
     display: block;
@@ -226,6 +295,7 @@ body{
     margin: 0 0 20px 26px;
     font-size: 24px;
 }
+
 .home main section article{
     background-color: none;
     padding: 0px;
@@ -234,11 +304,16 @@ body{
     margin-bottom: 20px;
     box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.2);
 }
+
 }
+/* END  MAIN  */
+
+
 @media(min-width:990px){
     .home main section article{
         max-width: 400px;
     }
+
     .home main section article i{
         font-size: 16px;
         padding: 5px;
@@ -253,19 +328,26 @@ body{
         top: 79%;
     } 
 }
+
+/* PC */
+
 @media(min-width:1200px){
+/* HEADER */
+
 .home header{
     flex-direction: row;
     flex-wrap: wrap;
     padding: 25px 20px;
     align-items: center;
     justify-content: space-between;
-}    
+}
+    
 .home header div.container-logo div.form form{
     width: 100%;
     margin-right: 5px;
     display: flex;
-}    
+}
+    
 .home header div.container-logo div.form form input{
     background-image: none;
     padding-left: 0px;
@@ -273,7 +355,8 @@ body{
     border-radius: 2px 0 0 2px;
     border: 1px solid black;
     font-size: 1rem;
-} 
+}
+  
 .home header div.container-logo div.form button.busqueda{
     display: flex;
     border: 1px solid black;
@@ -282,12 +365,14 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .home header p{
     margin-bottom: 0px;
     margin-top: 7px;
     font-size: 1rem;
     width: 35%;
 }
+
 .home header nav{
     display: flex;
     margin-top: 30px;
@@ -295,13 +380,21 @@ body{
     align-items: center;
     width: 100%;
 }    
+
+   
 .home header nav ul li{
     margin-right: 25px;
     font-size: 1rem;
 }
+    
+/* END HEADER */
+
+
+/* MAIN */
 .home main section article{
     max-width: 251px;
 }
+
 .home main section article i{
     font-size: 16px;
     padding: 5px;
@@ -315,4 +408,14 @@ body{
     right: 20px;
     top: 70%;
 } 
+/* END MAIN     */
+
+/* Footer */
+.contentArticle{
+    display: flex;
+
 }
+/* End Footer */
+
+}
+/* END MEDIA QUERIES */
