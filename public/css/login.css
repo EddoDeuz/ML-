@@ -1,45 +1,27 @@
-@import url(style.css);
+@import url(./style.css);
 
 
-.login{
+#form_login{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction:column ;
+    width: 310px;
+    margin: 100px auto;
+    height: 80px;
 }
 
-.contentLogin{
-    width: 60%;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    background-color: aliceblue;
-    border-radius: 3px;
-    box-shadow: 0 0 5px rgb(102, 100, 100);
-    padding: 2rem;
-    max-width: 900px;
+#form_login *{
+    border-radius: 5px;
+    border: transparent;
+    margin: 15px 0;
+    padding: 10px 10px;
 }
 
-.contentInput{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-}
-
-.contentInput label{
-    color: lightslategrey;
-    font-size: .8rem;
-}
-
-.contentInput input{
-    height: 30px;
-    border-radius: 3px;
-    padding-left: 8px;
-}
-
-.btnForm{
-    width: 100%;
+#submit_btn{
+    background-color:  var(--Celeste);
     color: white;
-    background-color: rgb(68, 68, 248);
-    border-radius: 3px;
-    border: none;
-    height: 30px;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 200px;
 }
